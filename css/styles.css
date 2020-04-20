@@ -11,3 +11,10 @@
   padding-left: 10%;
   padding-right: 10%;
 }
+
+#info{
+  margin-top: 20px;
+  padding: 50px;
+  text-align: center;
+  background-color: pink;
+}
