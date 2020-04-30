@@ -1,6 +1,10 @@
 window.onload = function(){
+  getCovidStats();
+}
 
-getCovidStats();
+//add commas to numbers and return as string
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 function getCovidStats(){
@@ -10,9 +14,9 @@ function getCovidStats(){
     return resp.json() 
   })
   .then(function(data){
-    let totalCases = data.cases;
-    let totalDeaths = data.deaths;
-    let totalRecovered = data.recovered;
+    let totalCases = numberWithCommas(data.cases);
+    let totalDeaths = numberWithCommas(data.deaths);
+    let totalRecovered = numberWithCommas(data.recovered);
 
     document.querySelector('.total-cases .card-body').textContent = (totalCases.toString());
     document.querySelector('.total-deaths .card-body').textContent = (totalDeaths.toString());
@@ -29,11 +33,11 @@ function getCovidStats(){
   })
   .then(function(data){
     for (let i=0; i<10; i++){
-      let country = data[i].country;
-      let cases = data[i].cases;
-      let recovered = data[i].recovered;
-      let deaths = data[i].deaths;
-      console.log(country,cases,recovered,deaths);
+      let country = numberWithCommas(data[i].country);
+      let cases = numberWithCommas(data[i].cases);
+      let recovered = numberWithCommas(data[i].recovered);
+      let deaths = numberWithCommas(data[i].deaths);
+      //console.log(country,cases,recovered,deaths);
 
       const tr = document.createElement('tr')
       tr.innerHTML = `<td>${country}</td><td>${cases}</td><td>${recovered}</td><td>${deaths}</td>`

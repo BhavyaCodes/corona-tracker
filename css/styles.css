@@ -17,7 +17,14 @@
   text-align: center;
   padding: 0 2%;
 }
-
+.flex-class{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.cards-row{
+  width: 100%;
+}
 .card{
   box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
   border-width: 0;
@@ -72,4 +79,9 @@
 }
 .even-table{
   background-color: #90f2ff;
+}
+.view-all-link{
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 10px;
 }
