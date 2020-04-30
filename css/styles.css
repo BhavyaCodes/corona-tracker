@@ -128,3 +128,20 @@ h1{
   padding: 10px 30px;
   margin: 16px 0;
 }
+
+
+
+/************footer*****************/
+footer{
+  background-color: chartreuse;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-line{
+  padding : 30px 15px;
+}
+.social-icons{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.5rem;
+}
