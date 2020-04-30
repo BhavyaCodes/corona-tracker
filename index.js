@@ -12,9 +12,9 @@ function getCovidStats(){
     let totalRecovered = data.recovered;
     //console.log(typeof(totalCases));
 
-    $('.total-cases').text(totalCases.toString());
-    $('.total-deaths').text(totalDeaths.toString());
-    $('.total-recovered').text(totalRecovered.toString());
+    document.querySelector('.total-cases').textContent = (totalCases.toString());
+    document.querySelector('.total-deaths').textContent = (totalDeaths.toString());
+    document.querySelector('.total-recovered').textContent = (totalRecovered.toString());
   })
   .catch(function(){
     console.log("error");
