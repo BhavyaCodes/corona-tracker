@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!--custom css-->
   <link rel="stylesheet" href="css/styles.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/492aa02ecb.js" crossorigin="anonymous"></script>
 
   <title>COVID-19 Tracker</title>
 </head>
@@ -36,12 +38,6 @@
       </div>
     </nav>
 
-
-      <!-- <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Loren Ipsum</h1>
-    <p class="lead">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-  </div> -->
 </div>
     <div class="container-fluid search-bar">
       <form class="" action="index.html" method="post">
@@ -55,6 +51,10 @@
   <section id = "info">
       <div class="row">
         <div class="col-lg-8 flex-class">
+          <div class = "title">
+            <p class = 'live'><i class="far fa-dot-circle live-icon"></i> LIVE</p>
+            <h1>World Stats Overview</h1>
+          </div>
           <div class="row cards-row">
             <div class="col-lg-4">
               <div class="card total-cases">
@@ -96,12 +96,14 @@
             </tr>
           </thead>
           <tbody class = 'tbody'>
+            
             <!-- <tr>
-              <td>${country}</td>
-              <td>${cases}</td>
-              <td>${recovered}</td>
+              <td class = "country-name"> <img class = "flag-img" src="https://corona.lmao.ninja/assets/img/flags/us.png" alt=""> country</td>
+              <td>cases</td>
+              <td>recovered</td>
               <td>${deaths}</td>
             </tr> -->
+            
           </tbody>
         </table>
         <p class="view-all-link"><a href="">View All</a></p>

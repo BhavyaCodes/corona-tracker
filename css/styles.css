@@ -12,15 +12,34 @@
   padding-right: 10%;
 }
 
+.title{
+  
+}
+.live{
+  text-align: left;
+  padding: 0 0 0 15px;
+  color: #E53E3E;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
 #info{
   margin-top: 20px;
   text-align: center;
   padding: 0 2%;
 }
+.title{
+  width: 100%;
+}
+h1{
+  text-align: left;
+  padding-left: 15px;
+}
 .flex-class{
   justify-content: center;
   align-items: center;
   display: flex;
+  flex-direction: column;
 }
 .cards-row{
   width: 100%;
@@ -84,4 +103,11 @@
   text-align: right;
   padding-right: 10px;
   padding-top: 10px;
+}
+.flag-img{
+  width: 25px;
+}
+.country-name{
+  text-align: left;
+  padding-left: 10px;
 }

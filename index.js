@@ -37,10 +37,11 @@ function getCovidStats(){
       let cases = numberWithCommas(data[i].cases);
       let recovered = numberWithCommas(data[i].recovered);
       let deaths = numberWithCommas(data[i].deaths);
+      let flagURL = data[i].countryInfo.flag;
       //console.log(country,cases,recovered,deaths);
 
       const tr = document.createElement('tr')
-      tr.innerHTML = `<td>${country}</td><td>${cases}</td><td>${recovered}</td><td>${deaths}</td>`
+      tr.innerHTML = `<td class = "country-name"><img class = "flag-img" src="${flagURL}" alt=""> ${country}</td><td>${cases}</td><td>${recovered}</td><td>${deaths}</td>`
       i%2===0 ? tr.classList.add('even-table') : tr.classList.add('odd-table');
       const tbody = document.querySelector('tbody');
       tbody.appendChild(tr);
