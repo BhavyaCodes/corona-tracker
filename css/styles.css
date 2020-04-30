@@ -15,7 +15,7 @@
 #info{
   margin-top: 20px;
   text-align: center;
-  padding-left: 2%;
+  padding: 0 2%;
 }
 
 .card{
@@ -55,4 +55,21 @@
 .total-deaths .card-footer{
   background-color: #FFFFFF;
   color: #718096;
+}
+
+
+
+
+/**********************Table*****************/
+
+.countries-affected{
+  width: 100%;
+}
+
+
+.odd-table{
+  background-color: #e0fcff;
+}
+.even-table{
+  background-color: #90f2ff;
 }
