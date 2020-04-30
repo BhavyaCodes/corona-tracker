@@ -52,5 +52,30 @@ function getCovidStats(){
   })
 }
 
+function getCountryStats(country){
+  fetch(`https://disease.sh/v2/countries/${country}`)
+    .then((resp)=>{
+      if (!resp.ok) throw new Error(`Status Code Error: ${resp.status}`);
+        return resp.json();
+    })
+    .then((data)=>{
+      const totalCases = data.cases;
+    const deaths = data.deaths;
+    const p = document.createElement('p');
+    p.innerText = `Total Cases: ${totalCases} , Deaths : ${deaths}`;
+    const searchSection = document.querySelector('#country-search .container');
+    searchSection.appendChild(p);
+      console.log(data);
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
+    
+}
+
+const searchButton = document.querySelector('.search-btn')
+searchButton.addEventListener('click', ()=>{
+  getCountryStats(document.querySelector('.search-bar').value);
+})
 //lighter blue : e0fcff
 //light blue: 90f2ff
