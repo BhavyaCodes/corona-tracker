@@ -111,3 +111,20 @@ h1{
   text-align: left;
   padding-left: 10px;
 }
+
+/***********search****************/
+
+#country-search{
+  background-color: pink;
+}
+.search-btn{
+  background-color: green;
+}
+.search-btn:hover{
+  background-color: blue;
+}
+
+.search-box{
+  padding: 10px 30px;
+  margin: 16px 0;
+}
