@@ -37,11 +37,11 @@
     </nav>
 
 
-      <div class="jumbotron jumbotron-fluid">
+      <!-- <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">Loren Ipsum</h1>
     <p class="lead">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-  </div>
+  </div> -->
 </div>
     <div class="container-fluid search-bar">
       <form class="" action="index.html" method="post">
@@ -51,24 +51,41 @@
     </div>
   </section>
 
-  <section id = "info">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4">
-            <h2 class = 'total-cases'>---</h2>
-            <p>Total cases</p>
-        </div>
-        <div class="col-lg-4">
-            <h2 class = 'total-deaths'>---</h2>
-            <p>Total Deaths</p>
-        </div>
-        <div class="col-lg-4">
-            <h2 class = 'total-recovered'>---</h2>
-            <p>Total Recovered</p>
-        </div>
-      </div>
-    </div>
 
+  <section id = "info">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card total-cases">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item card-body">---</li>
+                  <li class="list-group-item card-footer">Confirmed</li> 
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card total-recovered">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item card-body">---</li>
+                  <li class="list-group-item card-footer">Recovered</li>        
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card total-deaths">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item card-body">---</li>
+                  <li class="list-group-item card-footer">Deaths</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4"></div>
+      </div>
   </section>
 
   

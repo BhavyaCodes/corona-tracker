@@ -14,9 +14,9 @@ function getCovidStats(){
     let totalDeaths = data.deaths;
     let totalRecovered = data.recovered;
 
-    document.querySelector('.total-cases').textContent = (totalCases.toString());
-    document.querySelector('.total-deaths').textContent = (totalDeaths.toString());
-    document.querySelector('.total-recovered').textContent = (totalRecovered.toString());
+    document.querySelector('.total-cases .card-body').textContent = (totalCases.toString());
+    document.querySelector('.total-deaths .card-body').textContent = (totalDeaths.toString());
+    document.querySelector('.total-recovered .card-body').textContent = (totalRecovered.toString());
   })
   .catch(function(err){
     console.log(err);
