@@ -59,12 +59,31 @@ function getCountryStats(country){
         return resp.json();
     })
     .then((data)=>{
+
       const totalCases = data.cases;
-    const deaths = data.deaths;
-    const p = document.createElement('p');
-    p.innerText = `Total Cases: ${totalCases} , Deaths : ${deaths}`;
-    const searchSection = document.querySelector('#country-search .container');
-    searchSection.appendChild(p);
+      const totalRecovered = data.recovered;
+      const totalDeaths = data.deaths;
+      const tests = data.tests;
+      const todayCases = data.todayCases;
+      const todayDeaths = data.todayDeaths;
+      const countryName = data.country
+
+    //   const deaths = data.deaths;
+    //   const p = document.createElement('p');
+    // p.innerText = `Total Cases: ${totalCases} , Deaths : ${deaths}`;
+    // const searchSection = document.querySelector('#country-search .container');
+    // searchSection.appendChild(p);
+
+    document.querySelector('#country-search h3').textContent=`${countryName} Overview`;
+
+    document.querySelector('.country-total-cases .card-body').textContent = numberWithCommas(totalCases);
+    document.querySelector('.country-total-recovered .card-body').textContent = numberWithCommas(totalRecovered);
+    document.querySelector('.country-total-deaths .card-body').textContent = numberWithCommas(totalDeaths);
+    document.querySelector('.country-total-tests .card-body').textContent = numberWithCommas(tests);
+    document.querySelector('.country-cases-today .card-body').textContent = numberWithCommas(todayCases);
+    document.querySelector('.country-deaths-today .card-body').textContent = numberWithCommas(todayDeaths);
+
+    document.querySelector('.hidden').classList.remove('hidden');
       console.log(data);
     })
     .catch((err)=>{
