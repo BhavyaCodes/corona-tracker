@@ -200,6 +200,9 @@ footer{
   background-color: #120136;
   color: white;
 }
+.footer-svg{
+  height: 50%;
+}
 .tag-line{
   text-align: center;
 }

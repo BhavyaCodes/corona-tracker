@@ -83,21 +83,37 @@ function getCountryStats(country){
     document.querySelector('.country-cases-today .card-body').textContent = numberWithCommas(todayCases);
     document.querySelector('.country-deaths-today .card-body').textContent = numberWithCommas(todayDeaths);
 
-    document.querySelector('.hidden').classList.remove('hidden');
+    document.querySelector('.search-results-div').classList.remove('hidden');
     document.querySelector('.search-catch').classList.add('hidden');
       console.log(data);
     })
     .catch((err)=>{
       document.querySelector('.search-catch').classList.remove('hidden');
+      document.querySelector('.search-results-div').classList.add('hidden');
       console.log(err);
     })
     
 }
+document.querySelector('.search-bar').textContent = '';
 
-const searchButton = document.querySelector('.search-btn')
+const searchButton = document.querySelector('.search-btn');
 searchButton.addEventListener('click', ()=>{
   getCountryStats(document.querySelector('.search-bar').value);
-  console.log("button pressed");
 })
+
+const searchBox = document.querySelector('#search-input');
+searchBox.addEventListener("keydown",(event)=>{
+  if (event.key === 'Enter'){
+    getCountryStats(document.querySelector('.search-bar').value);
+  }
+})
+
+// const node = document.getElementsByClassName(".input")[0];
+// node.addEventListener("keyup", function(event) {
+//     if (event.key === "Enter") {
+//         // Do work
+//     }
+// });
+
 //lighter blue : e0fcff
 //light blue: 90f2ff
