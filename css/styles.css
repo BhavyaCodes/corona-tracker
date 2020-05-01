@@ -1,4 +1,6 @@
-
+a{
+  color: #fcbf1e;
+}
 
 /*************** navbar *****************/
 .navbar{
@@ -117,7 +119,7 @@ h1{
 #country-search{
   background-color: pink;
 }
-.search-btn{
+/* .search-btn{
   background-color: green;
 }
 .search-btn:hover{
@@ -127,21 +129,80 @@ h1{
 .search-box{
   padding: 10px 30px;
   margin: 16px 0;
+} */
+.search-box{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  
 }
-
+.input-box{
+  width: 90%;
+  border: white;
+  padding: 10px 80px 10px 20px;
+  border-radius: 20px;
+}
+/* .fa-search{
+  width: 10%;
+  height: 100%;
+} */
+.search-btn{
+  position: absolute;
+  top: 17px;
+  height: 30px;
+  width: 40px;
+  right: 75px;
+  background-color: white;
+  border-style: solid;
+  border-radius: 20px;
+  border: transparent;
+}
 
 
 /************footer*****************/
 footer{
-  background-color: chartreuse;
-  display: flex;
-  justify-content: space-between;
+  background-color: #120136;
+  color: white;
 }
-.footer-line{
-  padding : 30px 15px;
+.tag-line{
+  text-align: center;
+}
+.social-line{
+  text-align: right;
 }
 .social-icons{
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 20px 10px;
   font-size: 1.5rem;
+  transition: 0.3s;
+}
+.copyright-line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright-line p{
+  margin: 0 0;
+  padding: 20px 20px;
+}
+.tag-line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tag-line p{
+  margin: 0 0;
+  padding: 20px 20px;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .copyright-line{
+      order: 2;
+  }
+  .tag-line{
+      order: 1;
+  }
+  .social-line{
+      order: 3;
+  }
 }

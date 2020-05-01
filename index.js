@@ -76,6 +76,7 @@ function getCountryStats(country){
 const searchButton = document.querySelector('.search-btn')
 searchButton.addEventListener('click', ()=>{
   getCountryStats(document.querySelector('.search-bar').value);
+  console.log("button pressed");
 })
 //lighter blue : e0fcff
 //light blue: 90f2ff
