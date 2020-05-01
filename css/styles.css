@@ -59,6 +59,9 @@ h1{
   border-width: 0;
   margin: 40px 0 40px 0;
 }
+.card li{
+  text-align: center;
+}
 .card-body{
   font-size: 2rem;
   font-weight: 700;
