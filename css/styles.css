@@ -32,6 +32,11 @@ a{
   margin-top: 20px;
   text-align: center;
   padding: 0 2%;
+  display: flex;
+  justify-content: center;
+}
+.info-row{
+  width: 100%;
 }
 .title{
   width: 100%;
