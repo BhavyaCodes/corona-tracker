@@ -11,3 +11,4 @@ To Do -
 - clear search text after serching
 - remove old search result when searching new country
 - ~~add a footer~~
+- show loading circle when fetching search result

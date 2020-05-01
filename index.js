@@ -84,9 +84,11 @@ function getCountryStats(country){
     document.querySelector('.country-deaths-today .card-body').textContent = numberWithCommas(todayDeaths);
 
     document.querySelector('.hidden').classList.remove('hidden');
+    document.querySelector('.search-catch').classList.add('hidden');
       console.log(data);
     })
     .catch((err)=>{
+      document.querySelector('.search-catch').classList.remove('hidden');
       console.log(err);
     })
     
