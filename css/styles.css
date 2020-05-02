@@ -253,6 +253,9 @@ h1{
 #infographics-content .col{
   margin-top: 50px;
 }
+#infographics-content p{
+  margin-top: 20px;
+}
 
 .infographics-title-2{
   text-align: center;
@@ -260,6 +263,26 @@ h1{
 #infographics-title.infographics-title-2 h1{
   padding-left: 0;
   text-align: center;
+}
+
+#infographics-content-2{
+  text-align: center;
+}
+
+#infographics-content-2 .container{
+  width: 75%;
+}
+
+#infographics-content-2 img{
+  border-radius: 50%;
+  height: 180px;
+}
+
+#infographics-content-2 .col{
+  margin-top: 50px;
+}
+#infographics-content-2 p{
+  margin-top: 20px;
 }
 
 /************footer*****************/
