@@ -1,16 +1,32 @@
 a{
+  color: #ffe6a2;
+}
+a:hover{
   color: #fcbf1e;
+  text-decoration: none;
 }
 .hidden{
   display:none;
 }
+body{
+  background-color: #f4eeff;
+}
 
 /*************** navbar *****************/
 .navbar{
-  background-color: black;
+  background-color: #120136;
 }
-
-
+.navbar-brand{
+  color: #fcbf1e !important;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.nav-link{
+  color:#ffe6a2 !important;
+}
+.nav-link:hover{
+  color:#fcbf1e !important;
+}
 
 .search-bar{
   padding-left: 10%;
@@ -103,7 +119,7 @@ h1{
 }
 
 .total-tests .card-body{
-  background-color: rgb(194, 250, 247);
+  background-color: rgb(238, 255, 254);
   color: rgb(35, 226, 226);
 }
 .total-tests .card-footer{
@@ -111,7 +127,7 @@ h1{
   color: rgb(35, 226, 226);
 }
 .cases-today .card-body{
-  background-color: rgb(255, 202, 122);
+  background-color: rgb(255, 239, 214);
   color: #ff912b;
 }
 .cases-today .card-footer{
@@ -119,7 +135,7 @@ h1{
   color: #ff912b;
 }
 .deaths-today .card-body{
-  background-color: rgb(248, 208, 236);
+  background-color: rgb(255, 237, 250);
   color: #e74bdf;
 }
 .deaths-today .card-footer{
@@ -137,11 +153,11 @@ h1{
 }
 
 
-.odd-table{
-  background-color: #e0fcff;
-}
 .even-table{
-  background-color: #90f2ff;
+  background-color: #f4eeff;
+}
+.odd-table{
+  background-color: #dcd6f7;
 }
 .view-all-link{
   text-align: right;
@@ -159,7 +175,7 @@ h1{
 /***********search****************/
 
 #country-search{
-  background-color: pink;
+  background-color: #dcd6f7;
 }
 /* .search-btn{
   background-color: green;
@@ -184,31 +200,42 @@ h1{
   padding: 10px 80px 10px 20px;
   border-radius: 20px;
 }
-/* .fa-search{
-  width: 10%;
-  height: 100%;
-} */
+.input-box:focus{
+  border-style: none;
+}
+
 .search-btn{
   position: absolute;
   top: 17px;
   height: 30px;
   width: 40px;
   right: 75px;
-  background-color: green;
+  background-color: transparent;
   border-style: solid;
   border-radius: 20px;
   border: transparent;
+  transition: 0.3s;
+  
+}
+.search-btn:focus{
+  outline: none;
+}
+.search-btn:hover{
+  background-color: #ffe6a2;
+}
+.search-btn:active{
+  background-color: #fcbf1e;
 }
 /***********infographics************************/
 .infographics-title{
-  margin-top: 30px;
-  background-color: yellowgreen;
+  color: white;
+  margin-top: 0;
+  background-color: #120136;
   position: relative;
-  
 }
 .infographics-title h1{
   font-size: 6rem;
-  padding-left: 15%;
+  padding: 2% 15%;
   width: 80%;
   display: inline-block;
   position: relative;
@@ -244,6 +271,10 @@ h1{
 #infographics-content .container{
   width: 75%;
 }
+#infographics-content p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 #infographics-content img{
   border-radius: 50%;
@@ -255,13 +286,24 @@ h1{
 }
 #infographics-content-2 p{
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .infographics-title-2{
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.infographics-title-2 p{
+  font-size: 1.5rem;
+}
+.infographics-content-2 p{
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }
 .infographics-title.infographics-title-2 h1{
-  padding-left: 0;
+  padding: 0 0;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -284,6 +326,9 @@ h1{
 #infographics-content-2 p{
   margin-top: 20px;
 }
+.semi-title{
+  font-size: 1.5rem;
+}
 
 /************footer*****************/
 footer{
@@ -297,6 +342,7 @@ footer{
   text-align: center;
 }
 .social-line{
+  color: ;
   text-align: right;
 }
 .social-icons{
@@ -335,6 +381,8 @@ footer{
   }
   .social-line{
       order: 3;
+      display: flex;
+      justify-content: center;
   }
   .card{
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
