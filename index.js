@@ -18,9 +18,11 @@ function getCovidStats(){
     let totalDeaths = numberWithCommas(data.deaths);
     let totalRecovered = numberWithCommas(data.recovered);
 
-    document.querySelector('.total-cases .card-body').textContent = (totalCases.toString());
-    document.querySelector('.total-deaths .card-body').textContent = (totalDeaths.toString());
-    document.querySelector('.total-recovered .card-body').textContent = (totalRecovered.toString());
+    document.querySelector('.total-cases .card-body').textContent = totalCases.toString();
+    document.querySelector('.total-deaths .card-body').textContent = totalDeaths.toString();
+    document.querySelector('.total-recovered .card-body').textContent = totalRecovered.toString();
+    document.querySelector('.infographics-title-2 h1').textContent= totalCases.toString();
+    //document.querySelector('.total-cases .card-body').textContent = 'asdf';
   })
   .catch(function(err){
     console.log(err);
