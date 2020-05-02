@@ -200,13 +200,13 @@ h1{
   border: transparent;
 }
 /***********infographics************************/
-#infographics{
+#infographics-title{
   margin-top: 30px;
   background-color: yellowgreen;
   position: relative;
   
 }
-#infographics h1{
+#infographics-title h1{
   font-size: 6rem;
   padding-left: 15%;
   width: 80%;
@@ -215,7 +215,7 @@ h1{
   z-index: 2;
 }
 
-#infographics img{
+#infographics-title img{
   width: 20%;
   display: inline-block;
   position: absolute;
@@ -225,20 +225,42 @@ h1{
 }
 
 @media (max-width: 992px){
-  #infographics img{
+  #infographics-title img{
     width: 30%;
   }
 }
 
 @media (max-width: 768px){
   
-  #infographics h1{
+  #infographics-title h1{
     font-size: 4rem;
   }
 }
 
+#infographics-content{
+  text-align: center;
+}
 
+#infographics-content .container{
+  width: 75%;
+}
 
+#infographics-content img{
+  border-radius: 50%;
+  height: 180px;
+}
+
+#infographics-content .col{
+  margin-top: 50px;
+}
+
+.infographics-title-2{
+  text-align: center;
+}
+#infographics-title.infographics-title-2 h1{
+  padding-left: 0;
+  text-align: center;
+}
 
 /************footer*****************/
 footer{
