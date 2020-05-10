@@ -1,4 +1,4 @@
-[Link to corona-tracker](https://juggernaut9.github.io/corona-tracker/)
+[Link to corona tracker](https://corona-tracker.juggernaut9.now.sh/)
 
 To Do -  
 - beautify
@@ -16,3 +16,8 @@ To Do -
 - ~~remove border from search bar and icon when focussed~~
 - fix text not fitting in table
 - change fonts
+- Change background of table head
+- Customize navbar button for mobile to match color scheme of website
+- ~~Nav bar links~~
+- Edit countries affected title to fit in one line on phone
+- search hints
