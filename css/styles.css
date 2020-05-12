@@ -144,7 +144,19 @@ h1{
 }
 
 
+/*************** Verticalscrollbar ************/
 
+::-webkit-scrollbar {
+  height: 8px;
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: rgba(0,0,0,.8);
+  border-radius: 9px;
+}
 
 /**********************Table*****************/
 
@@ -152,6 +164,9 @@ h1{
   width: 100%;
 }
 
+table {
+  padding: 7px 0;
+}
 
 .even-table{
   background-color: #f4eeff;
